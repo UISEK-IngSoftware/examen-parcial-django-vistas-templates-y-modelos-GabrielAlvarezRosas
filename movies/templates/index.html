@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="mt-2">Películas:</h2>
+<div class="container mt-4">
+    <ul class="list-group">
+
+        {% for movie in movies %}
+
+        <a href="movie/{{ movie.id }}">{{ movie.title }} - {{ movie.release_date }}</a>
+
+        {% empty %}
+        <p>No hay películas registradas aún.</p>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+</body>
+
+</html>

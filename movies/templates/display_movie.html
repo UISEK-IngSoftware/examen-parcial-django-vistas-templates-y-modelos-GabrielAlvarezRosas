@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Características:</h3>
+<ul>
+    <li> Id: {{movie.id}}</li>
+    <li> Titulo: {{movie.title}}</li>
+    <li> Genero: {{movie.genre}}</li>
+    <li> Director: {{movie.director}}</li>
+    <li> Fecha de lanzamiento: {{movie.release_date}}</li>
+    <li> Sinopsis: {{movie.synopsis}} </li>
+</ul>
+</ul>
+{% endblock content %}
